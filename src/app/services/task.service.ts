@@ -11,7 +11,7 @@ const httpOpts = {
   providedIn: 'root',
 })
 export class TaskService {
-  private appUrl = 'http://localhost:5000/aliens/';
+  private appUrl = 'http://localhost:5000/tasks/';
   constructor(private http: HttpClient) {}
 
   getTasks(): Observable<Tasks[]> {
